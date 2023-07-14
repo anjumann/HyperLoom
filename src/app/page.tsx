@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <Hero />
       <QuickLinks />
-      <ProjectSection/>
-      <Banner/>
+      <ProjectSection />
+      <Banner />
     </>
-  )
+  );
 }

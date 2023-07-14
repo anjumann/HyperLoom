@@ -22,9 +22,10 @@ const notifications = [
   },
 
 ]
+type CardProps = React.ComponentProps<typeof Card>
 
 
-export default function ProjectCard({ className, ...props }) {
+export default function ProjectCard({ className, ...props }:CardProps) {
   return (
     <Card className={cn("w-[250px]", className)} {...props}>
       <CardHeader>

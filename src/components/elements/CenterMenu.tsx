@@ -12,11 +12,11 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
   MenubarTrigger,
-} from "@/components/ui/menubar"
+} from "@/components/ui/menubar";
 
 export default function CenterMenu() {
   return (
-    <Menubar className='border-0 shadow-none' >
+    <Menubar className="border-0 shadow-none">
       <MenubarMenu>
         <MenubarTrigger>File</MenubarTrigger>
         <MenubarContent>
@@ -103,5 +103,5 @@ export default function CenterMenu() {
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
-  )
+  );
 }

@@ -24,8 +24,9 @@ const notifications = [
 
 ]
 
+type CardProps = React.ComponentProps<typeof Card>
 
-export default function QuickCard({ className, ...props }) {
+export default function QuickCard({ className, ...props }:CardProps) {
   return (
     <Card className={cn("w-[250px]", className)} {...props}>
       <CardHeader>
