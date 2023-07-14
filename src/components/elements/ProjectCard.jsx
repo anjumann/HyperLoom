@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-import { ArrowRightIcon } from "@radix-ui/react-icons"
 
 const notifications = [
   {
@@ -25,11 +24,11 @@ const notifications = [
 ]
 
 
-export default function QuickCard({ className, ...props }) {
+export default function ProjectCard({ className, ...props }) {
   return (
     <Card className={cn("w-[250px]", className)} {...props}>
       <CardHeader>
-        <CardTitle>Features</CardTitle>
+        <CardTitle>Project</CardTitle>
         <CardDescription>Sub heading</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
@@ -52,10 +51,9 @@ export default function QuickCard({ className, ...props }) {
           ))}
         </div>
       </CardContent>
-      <CardFooter>
-        <Button className="w-full group">
-        Go to xyz <ArrowRightIcon className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-all duration-300 " /> 
-        </Button>
+      <CardFooter className="flex justify-between">
+        <Button variant="outline">Cancel</Button>
+        <Button>Deploy</Button>
       </CardFooter>
     </Card>
   )

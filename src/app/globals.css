@@ -99,3 +99,11 @@
 .quickCard-hover{
   @apply hover:scale-105 hover:-translate-y-1 hover:drop-shadow-xl transition-all duration-200 ease-in-out
 }
+
+.screen-width{
+  @apply w-11/12 md:w-11/12 lg:w-9/12 mx-auto
+}
+
+.card-wrapper{
+  @apply mt-10 flex justify-center lg:justify-evenly gap-2 flex-wrap
+}

@@ -5,7 +5,7 @@ import Balancer from "react-wrap-balancer";
 
 const Hero = () => {
   return (
-    <div className="w-11/12 md:w-10/12 lg:w-8/12 mx-auto mt-4 h-[70vh]  flex items-center">
+    <div className="screen-width mt-4 h-[70vh]  flex items-center">
       <div className="flex flex-col md:flex-row w-full mx-auto justify-between gap-x-20 items-center ">
         <div className=" w-11/12 md:w-1/2   space-y-10 text-center md:text-left lg:text-center ">
           <h1 className=" heading-1">
