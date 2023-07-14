@@ -16,9 +16,9 @@ const Hero = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             </Balancer>
           </h4>
-          <div className=" flex gap-3 justify-center md:justify-start lg:justify-center">
-            <Button > Option 1 </Button>
-            <Button variant="outline" >
+          <div className=" flex gap-3 justify-center md:justify-start lg:justify-center w-full">
+            <Button className='w-full' > Option 1 </Button>
+            <Button className='w-full' variant="outline" >
               {" "}
               Option 2
             </Button>

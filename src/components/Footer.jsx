@@ -1,8 +1,5 @@
 import React from "react";
 import ThemeToggle from "./elements/ThemeToggle";
-import { ImageIcon } from "lucide-react";
-import CenterMenu from "./elements/CenterMenu";
-import NavDropDown from "./elements/NavDropDown";
 import Link from "next/link";
 
 const Footer = () => {
