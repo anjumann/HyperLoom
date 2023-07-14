@@ -16,7 +16,7 @@ import {
 
 export default function CenterMenu() {
   return (
-    <Menubar className='border-0' >
+    <Menubar className='border-0 shadow-none' >
       <MenubarMenu>
         <MenubarTrigger>File</MenubarTrigger>
         <MenubarContent>
