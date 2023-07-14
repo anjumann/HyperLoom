@@ -83,3 +83,19 @@
 .centerFlex {
   @apply flex items-center justify-center;
 }
+
+.heading-1{
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-9 capitalize
+}
+
+.subheadig-1{
+  @apply text-sm md:text-base lg:text-lg leading-9 text-gray-700  dark:text-gray-300 
+}
+
+.eyebrow{
+  @apply text-sm md:text-sm lg:text-base leading-9 text-gray-500 dark:text-gray-300 w-fit mx-auto border-l-2 border-gray-500 pl-2
+}
+
+.quickCard-hover{
+  @apply hover:scale-105 hover:-translate-y-1 hover:drop-shadow-xl transition-all duration-200 ease-in-out
+}

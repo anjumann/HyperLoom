@@ -1,9 +1,11 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/Home/Hero";
+import QuickLinks from "@/components/Home/QuickLinks";
 
 export default function Home() {
   return (
     <>
     <Hero/>
+    <QuickLinks/>
     </>
   )
 }
