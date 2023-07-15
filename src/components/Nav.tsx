@@ -1,6 +1,5 @@
 import React from "react";
 import ThemeToggle from "./elements/ThemeToggle";
-import { ImageIcon } from "lucide-react";
 import CenterMenu from "./elements/CenterMenu";
 import NavDropDown from "./elements/NavDropDown";
 import Link from "next/link";
@@ -15,7 +14,7 @@ const Nav = () => {
               Hyper<span className="font-bold" >LOOM</span>
             </Link>
           </div>
-          <div className="centermenu hidden md:block">
+          <div className="hidden md:block">
             <CenterMenu />
           </div>
           <div className="flex gap-2">
