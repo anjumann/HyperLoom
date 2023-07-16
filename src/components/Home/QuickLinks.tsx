@@ -6,7 +6,7 @@ const QuickLinks = () => {
   return (
     <div className='screen-width bg-gray-100 dark:bg-transparent p-12'  >  
         <h3 className='eyebrow text-center ' >Quick Links</h3>
-        <h3 className='heading-1 w-fit mx-auto mt-2' >Explore section</h3>
+        <h3 className='heading-1 w-fit mx-auto mt-2 text-center' >Explore section</h3>
         <div className="card-wrapper ">
             <QuickCard className='quickCard-hover ' />
             <QuickCard className='quickCard-hover ' />

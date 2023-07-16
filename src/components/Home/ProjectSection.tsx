@@ -7,7 +7,7 @@ const ProjectSection = () => {
   return (
     <div className="screen-width p-20 bg-gray-50 dark:bg-transparent ">
       <h3 className="eyebrow text-center ">Project by Community</h3>
-      <h3 className="heading-1 w-fit mx-auto mt-2">Explore project</h3>
+      <h3 className="heading-1 w-fit mx-auto mt-2 text-center ">Explore project</h3>
       <div className="card-wrapper ">
         <ProjectCard className="quickCard-hover " />
         <ProjectCard className="quickCard-hover " />
