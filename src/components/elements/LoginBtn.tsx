@@ -1,9 +1,10 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import { getProviders, signIn } from "next-auth/react";
-
+import { getProviders, signIn, signOut } from "next-auth/react";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
 type Provider = {
   id: string;
   name: string;
@@ -16,6 +17,7 @@ type Providers = Record<string, Provider>;
 
 const LoginBtn = () => {
   const [providers, setProviders] = useState<Providers | null>(null);
+  const { data: session, status } = useSession();
   useEffect(() => {
     const fetchProviders = async () => {
       const res = await getProviders();
@@ -24,21 +26,37 @@ const LoginBtn = () => {
     fetchProviders();
   }, []);
 
+  if (status === "authenticated") {
+    return (
+      <Link href="/dashboard">
+        <Button variant="outline">DashBoard</Button>
+      </Link>
+    );
+  }
+
   if (providers) {
     return (
       <>
         {Object.values(providers).map((provider: Provider) => (
           <div key={provider.name}>
             <Button variant="outline" onClick={() => signIn(provider?.id)}>
-              {" "}
-              Login{" "}
+              {provider.name === "GitHub" ? (
+                <GitHubLogoIcon className="mr-2" />
+              ) : (
+                ""
+              )}
+              Login
             </Button>
           </div>
         ))}
       </>
     );
   }
-  return <>...</>
+  return (
+    <Button variant="outline" className="cursor-not-allowed" disabled>
+      Loading
+    </Button>
+  );
 };
 
 export default LoginBtn;
