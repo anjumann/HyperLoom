@@ -1,5 +1,4 @@
 import React from 'react'
-import {serverSession} from '@/lib/session'
 const page = async () => {
   
   return (
